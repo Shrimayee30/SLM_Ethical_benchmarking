@@ -1,0 +1,26 @@
+{
+  "benchmark_name": "hallucination_v0",
+  "refusal_text": "I cannot answer from the provided information.",
+  "datasets": {
+    "gsm8k": {
+      "hf_id": "openai/gsm8k",
+      "config": "main",
+      "split": "test",
+      "default_limit": 50
+    },
+    "gaia": {
+      "hf_id": "gaia-benchmark/GAIA",
+      "levels": ["2023_level2", "2023_level3"],
+      "split_candidates": ["validation", "test"],
+      "default_limit_per_level": 25,
+      "requires_hf_access_approval": true
+    },
+    "fact_citation": {
+      "path": "data/hallucination/fact_citation_prompts.jsonl"
+    }
+  },
+  "generation": {
+    "max_new_tokens": 256,
+    "temperature": 0.0
+  }
+}

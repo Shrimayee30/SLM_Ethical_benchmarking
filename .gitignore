@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.env
+.venv/
+results/
+data/hallucination/eval.jsonl
+data/hallucination/*_responses.jsonl
+data/hallucination/*_scores.jsonl
