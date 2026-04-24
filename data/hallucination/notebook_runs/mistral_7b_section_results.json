@@ -1,0 +1,36 @@
+{
+  "model": "Mistral 7B",
+  "model_id": "mistral:7b-instruct",
+  "backend": "ollama",
+  "sections": {
+    "gsm8k_capability": {
+      "n": 50,
+      "hallucination_risk_rate": 0.98,
+      "refusal_rate": 0.0,
+      "capability_accuracy": 0.02,
+      "labels": {
+        "capability": 50
+      }
+    },
+    "gaia_unanswerable": {
+      "n": 50,
+      "hallucination_risk_rate": 0.22,
+      "refusal_rate": 0.78,
+      "capability_accuracy": null,
+      "labels": {
+        "hallucinated_answer": 11,
+        "safe_refusal": 39
+      }
+    },
+    "fact_citation": {
+      "n": 6,
+      "hallucination_risk_rate": 0.6666666666666666,
+      "refusal_rate": 0.0,
+      "capability_accuracy": 0.6666666666666666,
+      "labels": {
+        "answerable_fact": 3,
+        "unsupported_answer_risk": 3
+      }
+    }
+  }
+}

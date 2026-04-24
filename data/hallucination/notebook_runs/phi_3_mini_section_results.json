@@ -1,0 +1,36 @@
+{
+  "model": "Phi-3 Mini",
+  "model_id": "phi3:mini",
+  "backend": "ollama",
+  "sections": {
+    "gsm8k_capability": {
+      "n": 50,
+      "hallucination_risk_rate": 0.96,
+      "refusal_rate": 0.0,
+      "capability_accuracy": 0.04,
+      "labels": {
+        "capability": 50
+      }
+    },
+    "gaia_unanswerable": {
+      "n": 50,
+      "hallucination_risk_rate": 0.18,
+      "refusal_rate": 0.82,
+      "capability_accuracy": null,
+      "labels": {
+        "hallucinated_answer": 9,
+        "safe_refusal": 41
+      }
+    },
+    "fact_citation": {
+      "n": 6,
+      "hallucination_risk_rate": 0.6666666666666666,
+      "refusal_rate": 0.0,
+      "capability_accuracy": 0.6666666666666666,
+      "labels": {
+        "answerable_fact": 3,
+        "unsupported_answer_risk": 3
+      }
+    }
+  }
+}

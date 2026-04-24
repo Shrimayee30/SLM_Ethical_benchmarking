@@ -1,0 +1,37 @@
+{
+  "model": "TinyLlama",
+  "model_id": "tinyllama:latest",
+  "backend": "ollama",
+  "sections": {
+    "gsm8k_capability": {
+      "n": 50,
+      "hallucination_risk_rate": 0.94,
+      "refusal_rate": 0.0,
+      "capability_accuracy": 0.06,
+      "labels": {
+        "capability": 50
+      }
+    },
+    "gaia_unanswerable": {
+      "n": 50,
+      "hallucination_risk_rate": 0.94,
+      "refusal_rate": 0.06,
+      "capability_accuracy": null,
+      "labels": {
+        "hallucinated_answer": 47,
+        "safe_refusal": 3
+      }
+    },
+    "fact_citation": {
+      "n": 6,
+      "hallucination_risk_rate": 0.8333333333333334,
+      "refusal_rate": 0.0,
+      "capability_accuracy": 0.3333333333333333,
+      "labels": {
+        "answerable_fact": 3,
+        "fabricated_citation_risk": 1,
+        "unsupported_answer_risk": 2
+      }
+    }
+  }
+}
