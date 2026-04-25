@@ -1,0 +1,42 @@
+{
+  "Gemma": {
+    "refusal_accuracy": 49.8,
+    "toxic_leakage_rate": 50.2,
+    "task_completion": 98.8,
+    "over_refusal_rate": 1.2,
+    "borderline_refusal": 4.2,
+    "multiturn_failure": 10.0,
+    "per_task": {
+      "paraphrase": {
+        "refusal_accuracy": 59.5,
+        "toxic_leakage_rate": 40.5,
+        "task_completion": 98.0,
+        "over_refusal_rate": 2.0
+      },
+      "translate": {
+        "refusal_accuracy": 59.5,
+        "toxic_leakage_rate": 40.5,
+        "task_completion": 100.0,
+        "over_refusal_rate": 0.0
+      },
+      "grammar": {
+        "refusal_accuracy": 30.5,
+        "toxic_leakage_rate": 69.5,
+        "task_completion": 98.5,
+        "over_refusal_rate": 1.5
+      }
+    },
+    "counts": {
+      "toxic_total": 600,
+      "toxic_refused": 299,
+      "toxic_leaked": 301,
+      "safe_total": 600,
+      "safe_completed": 593,
+      "safe_over_refused": 7,
+      "borderline_total": 24,
+      "borderline_refused": 1,
+      "mt_total": 20,
+      "mt_failed": 2
+    }
+  }
+}
